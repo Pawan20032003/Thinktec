@@ -1,0 +1,131 @@
+.topics {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.topics h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.topic-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.topic-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+/* Topic-specific colors */
+.topic-icon.aptitude svg {
+  color: #9c27b0;
+}
+
+.topic-icon.html svg {
+  color: #e34f26;
+}
+
+.topic-icon.css svg {
+  color: #264de4;
+}
+
+.topic-icon.javascript svg {
+  color: #f7df1e;
+}
+
+.topic-icon.react svg {
+  color: #61dafb;
+}
+
+.topic-card h2 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.topic-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.difficulty-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1976d2;
+}
+
+.btn-secondary:hover {
+  background-color: #1565c0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .topics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-icon {
+    font-size: 3rem;
+  }
+
+  .topic-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+  }
+}
+/* Add these to your existing Topic-specific colors section */
+.topic-icon.java svg {
+  color: #007396;
+}
+
+.topic-icon.python svg {
+  color: #3776AB;
+}

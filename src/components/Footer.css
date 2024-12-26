@@ -1,0 +1,18 @@
+.footer {
+  
+  background-color: var(--primary-blue);
+  padding: 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 ;
+  padding: 0 ;
+  text-align: center;
+  color: var(--text-color);
+} 
